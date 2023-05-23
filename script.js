@@ -13,7 +13,12 @@ btnElement.addEventListener('click', function(){
         divElement.innerHTML += i + 1;
         gridElement.appendChild(divElement);
 
+        divElement.addEventListener('click', function(){
+            divElement.classList.toggle('active');
+            console.log(divElement.innerHTML);
+        });
     }
+
 });
 
 

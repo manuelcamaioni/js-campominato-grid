@@ -25,6 +25,8 @@ main{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 1rem;
+    overflow: auto;
 }
 
 .cell, .grid{
@@ -37,4 +39,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.active{
+    background-color: rgb(30, 30, 87);
 }
