@@ -71,3 +71,11 @@ img{
     background-color: rgb(58, 58, 114);
 }
 
+.decoration{
+    width: 600px;
+    height: 600px;
+    transform: rotate(140deg);
+    background-color: rgba(58, 58, 114, .8);
+    top: -522px;
+    left: -399px;
+}
