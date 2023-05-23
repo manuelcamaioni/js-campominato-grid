@@ -13,11 +13,13 @@ btnElement.addEventListener('click', function(){
             divElement.addEventListener('click', function(){
                 divElement.classList.add('active');
                 console.log(parseInt(divElement.innerHTML));
+
                 if(divElement.classList.contains('active')){
                     btnElement.addEventListener('click', function(){
                         divElement.classList.remove('active');
                     });
                 }
+                
             });
         
     }

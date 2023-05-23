@@ -10,13 +10,21 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
-
     color: white;
-    background-color: rgb(9, 9, 48);
+    background-color: rgb(32, 32, 32);
 }
 
 main{
     padding: 2rem 0;
+}
+
+footer{
+    padding: 3rem 0;
+    background-color: rgb(49, 49, 49);
+}
+
+img{
+    mix-blend-mode: color;
 }
 
 .grid{
@@ -51,7 +59,7 @@ main{
 }
 
 #play-button{
-    background-color: rgb(9, 9, 48);
+    background-color: rgb(32, 32, 32);
     border: 1px solid white;
     color: white;
 }
