@@ -29,8 +29,8 @@ btnElement.addEventListener('click', function(){
  * 
  * Creates a DOM element
  * 
- * @param {string} tagName // write a string, it'll be implemented as a Node in html
- * @param {string} className  // write a class you want your tag to have
+ * @param {string} tagName  write a string, it'll be implemented as a Node in html
+ * @param {string} className  write a class you want your tag to have
  * @returns a html node with given class
  */
 function getElement(tagName, className){
