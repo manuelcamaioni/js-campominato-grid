@@ -30,7 +30,7 @@ main{
 }
 
 .cell, .grid{
-    border: 2px solid white;
+    border: 1px solid rgba( 255, 255, 255, .6);
 }
 
 .cell{
@@ -39,8 +39,20 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color .5s;
 }
 
 .active{
-    background-color: rgb(30, 30, 87);
+    background-color: rgb(58, 58, 114);
 }
+
+.cell:hover{
+    background-color: rgb(73, 73, 104);
+}
+
+#play-button{
+    background-color: rgb(9, 9, 48);
+    border: 1px solid white;
+    color: white;
+}
+
