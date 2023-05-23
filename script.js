@@ -1,8 +1,8 @@
 const btnElement = document.getElementById('play-button');
 const mainElement = document.querySelector('main');
-
+const gridElement = getElement('div', 'grid');
 btnElement.addEventListener('click', function(){
-    const gridElement = getElement('div', 'grid');
+    
     mainElement.appendChild(gridElement);
   
         for(let i = 0; i < 100; i++){
@@ -13,6 +13,11 @@ btnElement.addEventListener('click', function(){
             divElement.addEventListener('click', function(){
                 divElement.classList.add('active');
                 console.log(parseInt(divElement.innerHTML));
+                if(divElement.classList.contains('active')){
+                    btnElement.addEventListener('click', function(){
+                        divElement.classList.remove('active');
+                    });
+                }
             });
         
     }
