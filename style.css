@@ -26,6 +26,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .cell, .grid{

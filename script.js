@@ -6,18 +6,21 @@ const gridElement = document.getElementById('grid');
 btnElement.addEventListener('click', function(){
     
     gridElement.classList.toggle('grid');
+    if(gridElement.classList.contains('grid')){
+        for(let i = 0; i < 100; i++){
 
-    for(let i = 0; i<100; i++){
+            const divElement = getElements('div', 'cell');
+            divElement.innerHTML += i + 1;
+            gridElement.appendChild(divElement);
 
-        const divElement = getElements('div', 'cell');
-        divElement.innerHTML += i + 1;
-        gridElement.appendChild(divElement);
-
-        divElement.addEventListener('click', function(){
-            divElement.classList.toggle('active');
-            console.log(divElement.innerHTML);
-        });
+            divElement.addEventListener('click', function(){
+                divElement.classList.toggle('active');
+                console.log(divElement.innerHTML);
+            });
         
+        }
+    }else{
+        gridElement.innerHTML = '';
     }
     
 });
