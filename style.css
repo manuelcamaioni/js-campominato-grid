@@ -62,5 +62,10 @@ img{
     background-color: rgb(32, 32, 32);
     border: 1px solid white;
     color: white;
+    transition: background-color .5s;
+}
+
+#play-button:hover{
+    background-color: rgb(58, 58, 114);
 }
 
