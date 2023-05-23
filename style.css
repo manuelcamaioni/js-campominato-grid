@@ -6,28 +6,31 @@
 
 body{
     font-family: 'Cabin', sans-serif;
-font-family: 'Fira Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'PT Sans', sans-serif;
-}
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 
-header{
-    border-bottom: 10px solid rgb(103, 129, 218);
-}
-
-footer{
-    border-top: 10px solid rgb(103, 129, 218);
+    color: white;
+    background-color: rgb(9, 9, 48);
 }
 
 main{
-    background-color: rgba(49, 147, 238, 0.979);
     padding: 2rem 0;
 }
 
 .grid{
     width: 700px;
     height: 700px;
-    border: 2px solid black;
     margin: auto;
+    border-radius: 1rem;
+}
+
+.cell, .grid{
+    border: 2px solid white;
+}
+
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
 }
