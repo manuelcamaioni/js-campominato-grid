@@ -6,9 +6,9 @@ btnElement.addEventListener('click', function(){
     
     mainElement.appendChild(gridElement);
   
-        for(let i = 0; i < 100; i++){ // creates 100 cells displayed in the div.grid parent
+        for(let i = 1; i <= 100; i++){ // creates 100 cells displayed in the div.grid parent
             const divElement = getElement('div', 'cell');
-            divElement.innerHTML += i + 1;
+            divElement.innerHTML += i;
             gridElement.appendChild(divElement);
 
             divElement.addEventListener('click', function(){
