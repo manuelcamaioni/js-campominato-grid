@@ -1,12 +1,12 @@
 const btnElement = document.getElementById('play-button');
 const mainElement = document.querySelector('main');
-const gridElement = getElement('div', 'grid'); // creates a div with class='grid'
+const gridElement = getElement('div', 'grid'); // it creates a div with class='grid'
 
 btnElement.addEventListener('click', function(){
     
     mainElement.appendChild(gridElement);
   
-        for(let i = 1; i <= 100; i++){ // creates 100 cells displayed in the div.grid parent
+    for(let i = 1; i <= 100; i++){ // it creates 100 cells displayed in the div.grid parent
             const divElement = getElement('div', 'cell');
             divElement.innerHTML += i;
             gridElement.appendChild(divElement);
@@ -17,11 +17,11 @@ btnElement.addEventListener('click', function(){
 
                 if(divElement.classList.contains('active')){
                     btnElement.addEventListener('click', function(){
-                        divElement.classList.remove('active');
-                    });
-                }
+                    divElement.classList.remove('active');
+                });
+            }
                 
-            });
+        });
     }
 });
 
