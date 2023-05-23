@@ -17,8 +17,9 @@ btnElement.addEventListener('click', function(){
             divElement.classList.toggle('active');
             console.log(divElement.innerHTML);
         });
+        
     }
-
+    
 });
 
 
